@@ -1,26 +1,101 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.iniciales-class {
+  
+  height: 100%;
+
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+.main {
+
+  height: 40vw;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.carrousel {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100% 0%;
+
+}
+
+.carrousel-main {
+  background-image: url(../public/assets/parte5-2.png);
+  background-size: cover;
+  background-repeat: inherit;
+}
+
+
+.img {
+
+  display: flex;
+  gap: 18px;
+
+}
+
+.photo {
+
+  height: auto;
+
+}
+
+.image-container {
+  position: relative; 
+  display: inline-block; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  display: block; /* Evita espacios extra */
+  width: 100%; /* Ajusta el ancho de la imagen */
+  height: auto;
+}
+
+.map-container {
+  position: absolute; /* El hijo se posiciona de forma absoluta */
+  top: 91%; /* Centrar verticalmente (ajustar según necesites) */
+  left: 50%; /* Centrar horizontalmente (ajustar según necesites) */
+  transform: translate(-50%, -50%); /* Para un centrado perfecto */
+  padding: 20px;
+  width: 400px;
+  height: 11rem;
+  z-index: 2; /* Asegura que esté por encima de la imagen */
+}
+
+.map {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main {
+
+    height: 75vw;
+  
+  }
+
+
+}
+
+
