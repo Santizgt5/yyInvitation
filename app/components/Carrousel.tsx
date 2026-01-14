@@ -15,7 +15,7 @@ var settings = {
     centerMode: true,
     infinite: true,
     centerPadding: "80px",
-    slidesToShow: 2,
+    slidesToShow: 3,
     speed: 500,
     arrows: false,
     responsive: [

@@ -36,24 +36,24 @@ export default function Home() {
 
  return (
     <>
-      <main className="flex min-h-screen flex-col justify-between items-center">
+      <main className="flex flex-col justify-between items-center">
         <section>
           <img className='iniciales-class' src="/assets/principal.jpg" alt="head-photo" />
         </section>
         <section>
-          <img className='rounded-lg' src="/assets/parte2.png" alt="hour" />
+          <img src="/assets/parte2.png" alt="hour" />
         </section>
         <section className='mt-2'>
           <img src="/assets/parte3.png" alt="dress-code"/>
         </section>
       </main>
-       <section className='mt-2 image-container'>
+       <section className='image-container'>
           <img src="/assets/parte4.png" alt="couple-photo"/>
           <div className='map-container'>
               <Map />
           </div>
         </section>
-      <section className='mt-1'>
+      <section className='flex flex-col justify-between items-center'>
         <img src="/assets/parte5-1.png" alt="" />
       </section>
       <section className='carrousel-main flex-col items-center'>
