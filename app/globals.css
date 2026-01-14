@@ -34,6 +34,10 @@
 
 }
 
+.color-button {
+   background-color: hsl(66, 33, 16);
+  }
+
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -63,7 +67,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 40% 0%;
+    margin: 15% 0%;
+
   }
 
   .image-container {
@@ -102,8 +107,8 @@ body {
   .carrousel {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 30% 0%;
+    justify-content: space-between;  
+
   }
 
   .image-container {

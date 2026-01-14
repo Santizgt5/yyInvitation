@@ -56,8 +56,11 @@ export default function Home() {
       <section className='flex flex-col justify-between items-center'>
         <img src="/assets/parte5-1.png" alt="" />
       </section>
-      <section className='carrousel-main flex-col items-center'>
+      <section className='carrousel-main'>
             <Carrousel images={carrousel_images}></Carrousel>
+            <section className='flex flex-col items-center'>
+              <button type='button' className='color-button text-white font-bold py-3 px-5 rounded-full mb-10'><a href="https://forms.gle/iNAEfeGjdrjyGRnv7" target='_blank'>Confirma aqui</a></button>
+            </section>
       </section>
     </>
   );
