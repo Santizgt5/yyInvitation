@@ -15,9 +15,10 @@ var settings = {
     centerMode: true,
     infinite: true,
     centerPadding: "80px",
-    slidesToShow: 3,
+    slidesToShow: 1,
     speed: 500,
     arrows: false,
+    slidesToScroll: 1,
     responsive: [
         {
             breakpoint: 768,
@@ -29,6 +30,7 @@ var settings = {
                 slidesToShow: 1,
                 speed: 500,
                 arrows: false,
+                slidesToScroll: 1
             }
         }
 
