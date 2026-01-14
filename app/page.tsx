@@ -3,6 +3,8 @@
 import './globals.css'
 import { Carrousel } from './components';
 import { Image } from './components/interface';
+import { useState, useEffect } from 'react';
+
 
 import Map from './components';
 
@@ -34,8 +36,13 @@ const carrousel_images: Image[] = [
 
 export default function Home() {
 
+  const [title, setTitle] = useState('Boda de Yair y Yessenia');
+  const [description, setDescription] = useState('Invitación a la boda');
+
  return (
     <>
+      <title>{title}</title>
+      <meta name="description" content={description} />
       <main className="flex flex-col justify-between items-center">
         <section>
           <img className='iniciales-class' src="/assets/principal.jpg" alt="head-photo" />
