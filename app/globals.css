@@ -99,27 +99,14 @@ body {
     height: 100%;
   }
 
-  .countdown-container {
-    position: relative; 
-    display: inline-block; 
-    overflow: hidden;
-  }
-
-  .countdown-container img {
-      display: block; /* Evita espacios extra */
-      width: 100%; /* Ajusta el ancho de la imagen */
-      height: auto;
-    }
-
   .dv-container {
     position: absolute; /* El hijo se posiciona de forma absoluta */
-    top: 61%; /* Centrar verticalmente (ajustar según necesites) */
+    top: 5%; /* Centrar verticalmente (ajustar según necesites) */
     left: 50%; /* Centrar horizontalmente (ajustar según necesites) */
-    transform: translate(-50%, -50%); /* Para un centrado perfecto */
+    transform: translate(-50%, -50%); 
     padding: 20px;
     z-index: 1; /* Asegura que esté por encima de la imagen */
   }
-
 
 
 }
@@ -162,23 +149,11 @@ body {
     height: 100%;
   }
 
-  .countdown-container {
-    position: relative; 
-    display: inline-block; 
-    overflow: hidden;
-  }
-
-  .countdown-container img {
-      display: block; /* Evita espacios extra */
-      width: 100%; /* Ajusta el ancho de la imagen */
-      height: auto;
-    }
-
   .dv-container {
     position: absolute; /* El hijo se posiciona de forma absoluta */
-    top: 61%; /* Centrar verticalmente (ajustar según necesites) */
+    top: 5%; /* Centrar verticalmente (ajustar según necesites) */
     left: 50%; /* Centrar horizontalmente (ajustar según necesites) */
-    transform: translate(-50%, -50%); /* Para un centrado perfecto */
+    transform: translate(-50%, -50%); 
     padding: 20px;
     z-index: 1; /* Asegura que esté por encima de la imagen */
   }

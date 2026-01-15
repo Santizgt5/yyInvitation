@@ -57,26 +57,28 @@ export default function Countdown({ targetDate }: CountdownProps) {
 function TimeCard({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center justify-center
-      w-20 h-24 sm:w-24 sm:h-28
-      rounded-2xl
-      bg-gradient-to-br from-zinc-900 to-zinc-800
+      w-16 h-17 sm:w-24 sm:h-28
+      bg-zinc-900/40
+      backdrop-blur-md
+      border border-white/10
+      rounded-xl
       text-white
-      shadow-lg
+      shadow-md
       transition-transform duration-300
       hover:scale-105
     ">
       <span
         key={value}
-        className=" text-4xl
+        className=" text-2xl
+                    sm:text-3xl
                     font-light
-                    uppercase
                     tracking-[0.25em]
                   text-zinc-100
                     animate-fade"
       >
         {value.toString().padStart(2, "0")}
       </span>
-      <span className="text-xs uppercase tracking-widest text-zinc-400 mt-1">
+      <span className="mt-0.5 text-[10px] uppercase tracking-[0.25em] text-zinc-400">
         {label}
       </span>
     </div>
