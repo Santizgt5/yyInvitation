@@ -78,7 +78,9 @@ function TimeCard({ value, label }: { value: number; label: string }) {
       >
         {value.toString().padStart(2, "0")}
       </span>
-      <span className="mt-0.5 text-[10px] uppercase tracking-[0.25em] text-zinc-400">
+      <span
+        translate="no" 
+        className="mt-0.5 text-[10px] uppercase tracking-[0.25em] text-zinc-400">
         {label}
       </span>
     </div>
