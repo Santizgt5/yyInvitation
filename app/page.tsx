@@ -1,9 +1,10 @@
 'use client'
 
 import './globals.css'
+import Countdown from './components/Coutdown';
 import { Carrousel } from './components';
 import { Image } from './components/interface';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 
 import Map from './components';
@@ -29,11 +30,6 @@ const carrousel_images: Image[] = [
   }
 ]
 
-// export const metadata = {
-//   title: 'Boda de Yair y Yessenia',
-//   description: 'Invitación a la boda'
-// }
-
 export default function Home() {
 
   const [title, setTitle] = useState('Boda de Yair y Yessenia');
@@ -47,8 +43,11 @@ export default function Home() {
         <section>
           <img className='iniciales-class' src="/assets/principal.jpg" alt="head-photo" />
         </section>
-        <section>
+        <section className='countdown-container'>
           <img src="/assets/parte2.png" alt="hour" />
+          <div className='dv-container'>
+            <Countdown targetDate="2026-02-22T15:00:00" ></Countdown>
+          </div>
         </section>
         <section className='mt-2'>
           <img src="/assets/parte3.png" alt="dress-code"/>
